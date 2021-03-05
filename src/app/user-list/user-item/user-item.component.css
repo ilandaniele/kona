@@ -1,0 +1,25 @@
+.btn {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+    width:300px;
+    height:45px;
+    border-radius:2rem;
+    font-weight:600;
+    font-size:14px;
+    font-stretch: normal;
+    font-style:normal;
+    margin-bottom:30px;
+}
+.icon{
+    border-radius:2rem;
+    margin-right: 20px;
+}
+.name{ 
+    width:300px;
+    text-align:left;
+}
+.toggle {
+    
+}

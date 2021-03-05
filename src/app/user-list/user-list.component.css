@@ -1,0 +1,18 @@
+.title{
+    font-size:17px;
+    font-weight:600;
+    height:30px;
+}
+
+.subtitle{
+    font-weight:600;
+    height:60px;
+    width: 550px;
+    font-size:14px;
+    color:gray;
+}
+
+.table td{
+    border-top:0px;
+    left: 0;
+}
