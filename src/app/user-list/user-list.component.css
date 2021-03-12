@@ -12,7 +12,16 @@
     color:gray;
 }
 
+.table {
+    width:400px;
+}
 .table td{
     border-top:0px;
     left: 0;
+    padding-top:1.75rem;
+}
+
+.row{
+    margin-left:0px;
+    margin-bottom:0px;
 }

@@ -1,9 +1,14 @@
+.container {
+}
 
-
+.row{
+    margin-left:30px;
+    margin-right:0px;
+}
 .subtitle{
     font-weight:600;
     height:35px;
-    width:200px;
+    width:300px;
     font-size:16px;
 }
 
