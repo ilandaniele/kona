@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <span class="title">Users</span>
+  </div>
+  <div class="row">
+    <span class="subtitle">If you want to get contact information to specific user, just select group and then select him from the list below</span>
+  </div>
+  <div class="row">
+    <div class="column" style="margin-right:20px;">
+      <span> Select a group of users </span>
+    </div>
+    <div class="column" style="margin-left:60px;">
+      <select (change)= "setCategory($event.target.value)">
+        <option *ngFor="let category of categories">{{ category }}</option>
+      </select>
+    </div>
+    <div class="column" style="margin-left:10px;">
+      <input #searchbox type="text" placeholder="Search..." style="height:25px; width:200px;" (input)="setSearch(searchbox.value)">
+    </div>
+  </div>
+  <table class="table">
+    <tr> 
+      <td>
+        <app-user-item *ngFor="let u of getUpperHalf() | filterPipe:selectedCategory:search" [user]="u"></app-user-item>
+      </td>
+      <td>
+        <app-user-item *ngFor="let u of getLowerHalf() | filterPipe:selectedCategory:search" [user]="u"></app-user-item>
+      </td>
+    </tr>
+  </table>
+</div>

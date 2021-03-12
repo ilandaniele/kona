@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="userInfo">
+    <div class="portrait">
+      <div class="bg-image" 
+      *ngIf="user && user.picture"
+      [style.background-image]="bgImage">
+      </div>
+      <img *ngIf="user && user.picture" src="{{user.picture.large}}" class="profile_photo">
+      <span class="name" *ngIf="user && user.name">{{ user.name.first }} {{ user.name.last }}</span>
+      <span class="profession" *ngIf="user && user.profession">{{ user.profession.type }}</span>
+    </div>
+    <div class="row" *ngIf="user && user.biography">
+      <span class="title">Short Bio</span>
+    </div>
+    <div class="row" *ngIf="user && user.biography">  
+      <span class="subtitle">{{ user.biography }}</span>
+    </div>
+    
+    <div class="row" *ngIf="user && user.profession">
+      <span class="title">The direction of the profession</span>
+    </div>
+    <div class="row" *ngIf="user && user.profession">
+      <span class="subtitle">{{ user.profession.field }}</span>
+    </div>
+
+    <div class="row" *ngIf="user && user.email" >
+      <span class="title">Email Address</span>
+    </div>
+    <div class="row" *ngIf="user && user.email">
+      <span class="subtitle">{{ user.email }}</span>
+    </div>
+
+    <div class="row" *ngIf="user && user.phone">
+      <span class="title" >Phone Number</span>
+    </div>
+    <div class="row"  *ngIf="user && user.phone">
+      <span class="subtitle">{{ user.phone }}</span>
+    </div>
+
+  </div>
+</div>

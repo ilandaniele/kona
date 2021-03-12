@@ -1,0 +1,67 @@
+.container {
+}
+
+.row{
+    margin-left:30px;
+    margin-right:0px;
+}
+.subtitle{
+    font-weight:600;
+    height:35px;
+    width:300px;
+    font-size:16px;
+}
+
+.title{
+    padding-top:20px;
+    padding-bottom:10px;
+    color:gray;
+    font-size:14px;
+    font-weight:600;
+}
+
+.portrait {
+    position: relative;
+}
+
+.bg-image{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height:100%;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 75%;
+}
+
+.profile_photo{
+    position:absolute;
+    bottom: 110px;
+    right: 120px;
+    border-radius:70px;
+    border: 2px solid white;
+}
+
+.name{
+    position:absolute;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    width: 180px;
+    bottom: 60px;
+    right: 90px;
+}
+
+.profession{
+    position:absolute;
+    font-size:13px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    width: 180px;
+    bottom: 40px;
+    right: 90px;
+}
